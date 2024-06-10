@@ -15,7 +15,7 @@ function Shelf_container ()  {
       <IoHome className='w-16 h-24'/>
       </Link>
         <div className='w-[80vw] p-10 flex gap-3 flex-wrap overflow-auto h-[77vh]'>
-            {shelfBooks !="undefined" && shelfBooks.length > 0 ? (shelfBooks.map((ele , index) => (
+            {shelfBooks !=null && shelfBooks !="undefined" && shelfBooks.length > 0 ? (shelfBooks.map((ele , index) => (
                 <Book2 index={index} ele={ele}/>
                 ))) : <Loading title='No books in the Shelf'/>}
         </div>
